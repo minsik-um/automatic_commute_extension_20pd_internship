@@ -1,0 +1,110 @@
+header, main, footer {
+    display: block;
+}
+
+body, p, h1, h2, ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, button, input {
+    font-size: inherit;
+    color: inherit;
+}
+
+button {
+    border :none;
+}
+
+address {
+    font-style: normal;
+}
+
+html {
+    font-size: 16px;
+    color: rgb(14, 14, 14);
+}
+
+em {
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(232, 235, 240);
+}
+
+.top_header {
+    width: 100%;
+    padding: 25px 20px;
+    background-color: rgb(77, 80, 85);
+
+    color: #f1f1f1;
+}
+
+.top_header .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.blue_number {
+    color: rgb(45, 174, 201);
+    font-weight: bold;
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
+.top_header .desc {
+    margin-top: 15px;
+
+    font-size: 16px;
+}
+
+.main_contents {
+    width: 100%;
+}
+
+.wrap_input + .wrap_input {
+    margin-top: 10px;
+}
+
+.content_section, .btn_save {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+}
+
+.content_section {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fcfcfc;
+}
+
+.content_section .second_title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content_section .tootip_list {
+    list-style-position: inside;
+}
+
+.content_section label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.content_section input {
+    padding: 5px;
+}
+
+.content_section .tooltip {
+    margin-bottom: 20px;
+}
+
+.bottom_footer {
+    margin-top: 20px;
+    padding: 10px 20px;
+}

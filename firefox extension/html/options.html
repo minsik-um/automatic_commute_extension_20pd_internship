@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>정보 등록 - 자동 출퇴근 플러그인</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/options.css">
+</head>
+<body>
+    <header class="top_header">
+        <h1 class="title">자동 출퇴근 플러그인 - <em class="blue_number">2020</em> 공공데이터 청년인턴십</h1>
+        <p class="desc"><em class="blue_number">3</em>개월, 조금 더 편하게 다니자!</p>
+    </header>
+    <main class="main_contents">
+        <div class="content_section">
+            <h2 class="second_title">필요 정보 입력</h2>
+            <ul class="tootip_list">
+                <div id="test"></div>
+                <li>처음 입력하면 자동 저장됩니다.</li>
+                <li>정보 수정은 <em class="bold_text">확장 프로그램 옵션</em>을 들어가주세요.</li>
+                <li><em class="bold_text">12시</em> 이전엔 출근, 이후엔 퇴근 매크로를 실행합니다.</li>
+            </ul>
+        </div>
+        <div class="content_section">
+            <div class="wrap_input">
+                <label for="login_id">ID: </label>
+                <input id="login_id" type="text" placeholder="dt2009999" required>
+            </div>
+            <div class="wrap_input">
+                <label for="login_passwd">PASSWORD: </label>
+                <input id="login_passwd" type="password" placeholder="cool_password" required>
+            </div>
+        </div>
+        <div class="content_section">
+            <p class="tooltip">퇴근 시 업무 선택 아이템의 차례 숫자 입력, 미선택 제외 1부터 시작, 기타는 미구현.</p>
+            <div class="wrap_input">
+                <label for="category1">중분류</label>
+                <input id="category1" type="text" placeholder="1" required>
+            </div>
+            <div class="wrap_input">
+                <label for="category2">소분류</label>
+                <input id="category2" type="text" placeholder="1" required>
+            </div>
+            <div class="wrap_input">
+                <label for="category3">상세분류</label>
+                <input id="category3" type="text" placeholder="1" required>
+            </div>
+        </div>
+    </main>
+    <footer class="bottom_footer">
+        <address>
+            불편 신고: <a href="mailto:dt2003979@dt20gw.hyosungitx.com">dt2003979@dt20gw.hyosungitx.com</a>
+        </address>
+    </footer>
+    <script src="/js/options.js"></script>
+</body>
+</html>

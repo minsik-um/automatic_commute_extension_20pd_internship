@@ -1,0 +1,19 @@
+{
+    "name": "자동 출퇴근 플러그인 - 2020 공공데이터 청년인턴십",
+    "version": "1.2",
+    "description": "2020 공공데이터 인턴 출퇴근 사이트 접속 시 사전에 입력한 정보로 자동 처리해줍니다.",
+    "icons": {
+        "128": "/resources/ico128.png"
+    },
+    "background": {
+        "scripts": ["/js/background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "tabs"
+        ,"storage"
+        ,"https://dt20chk.hyosungitx.com/*"
+    ],
+    "options_page": "/html/options.html",
+    "manifest_version": 2
+  }
