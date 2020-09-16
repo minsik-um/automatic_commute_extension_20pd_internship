@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "자동 출퇴근 플러그인 - 2020 공공데이터 청년인턴십",
-    "version": "1.1",
+    "version": "1.0",
     "browser_action": {
         "default_title": "설정 페이지 이동"
         ,"default_popup": "html/options.html"
