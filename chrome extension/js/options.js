@@ -11,20 +11,10 @@ function save_options() {
         ,categoryIdx1
         ,categoryIdx2
         ,categoryIdx3
-    }, () => {
-        const btn = document.getElementById('save')
-              ,btnText = btn.innerHTML;
+    }, () => { });
+}
 
-        btn.classList.add('success');
-        btn.innerHTML = '저장 성공!';
-        setTimeout(() => {
-            btn.classList.remove('success');
-            btn.innerHTML = btnText;
-        }, 1500);
-    });
-  }
-
-  function restore_options() {
+function restore_options() {
     chrome.storage.sync.get({
         userId: 'dt2009999'
         ,userPasswd: 'dt2009999'
@@ -38,7 +28,7 @@ function save_options() {
         document.getElementById('category2').value = items.categoryIdx2;
         document.getElementById('category3').value = items.categoryIdx3;
     });
-  }
-  document.addEventListener('DOMContentLoaded', restore_options);
-  document.getElementById('save').addEventListener('click',
-      save_options);
+}
+
+document.addEventListener('DOMContentLoaded', restore_options);
+document.querySelector('.main_contents').addEventListener('keyup', save_options);

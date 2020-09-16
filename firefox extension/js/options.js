@@ -42,7 +42,5 @@ function restore_options() {
     });
 }
 
-document.getElementById('test').innerHTML = '234';
-
 document.addEventListener('DOMContentLoaded', restore_options);
 document.querySelector('.main_contents').addEventListener('keyup', save_options);
