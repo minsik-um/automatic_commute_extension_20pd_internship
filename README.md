@@ -10,11 +10,16 @@ PC만 지원, 모바일 미지원 사유는 아래 따로 기술함.
 - Firefox Add-on
 - Chrome Extension
 
+### 설치 방법(Firefox add-on)
+1. [install.xpi](https://github.com/minsik-um/automatic_commute_extension_20pd_internship/raw/master/install.xpi) 다운로드
+2. xpi 파일을 firefox 브라우저에 드래그한다.
+3. 확장 프로그램 설치 팝업이 뜨면 설치!
+
 ### 사용방법
 1. 자동으로 입력할 정보를 설정 페이지에서 입력합니다. 입력만 하면 자동 저장됩니다.
     - Firefox: 브라우저 우측 상단 확장 프로그램 버튼 눌러 페이지 열기
     - Chrome: [출퇴근 웹사이트](https://dt20chk.hyosungitx.com/) 접속 시 옵션 페이지 열림
-1. [출퇴근 웹사이트](https://dt20chk.hyosungitx.com/)에 접속합니다.
+2. [출퇴근 웹사이트](https://dt20chk.hyosungitx.com/)에 접속합니다.
 3. 출퇴근 웹사이트를 새로고침하여 다시 접속하면 매크로가 실행됩니다.
     - 12시 이전: 출근 매크로
     - 12시 이후: 퇴근 매크로
