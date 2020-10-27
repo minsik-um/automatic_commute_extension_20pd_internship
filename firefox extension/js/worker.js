@@ -164,10 +164,10 @@ function main() {
              * 퇴근 처리 후 무한 반복을 막기 위해
              * 로그아웃 메시지가 떴으면 처리 안하도록 설정
              */
-            const divLogout = document.getElementById('divLogoutAfter');
+            const divLogout = document.getElementById('divLogoutBefore');
 
-            if (Timer.isTimeAfter({standardHour: Worker.MIN_GETTING_OFF_HOUR}
-                && divLogout.style.display != 'none')) {
+            if (Timer.isTimeAfter({standardHour: Worker.MIN_GETTING_OFF_HOUR})
+                && divLogout.style.display != 'none') {
                 Worker.clickBtnSubmit();
             }
             break;
