@@ -2,7 +2,8 @@
 Timer = {
 
     /**
-     * @param {Number} standardHour 기준 시간, 15는 오후 3시
+     * @param {Number} standardHour 현재 시간과 비교할 기준 시간, 15는 오후 3시
+     * @return {Boolean} 입력된 시간을 기준으로 현재 시간이 이후인가?
      */
     isTimeAfter({standardHour}) {
         const currentHour = (new Date()).getHours();
@@ -29,12 +30,17 @@ Worker = {
 
     /**
      * 출/퇴근의 구분 시간.
+     * 12: 12시(정오)
      */
-    MIN_GETTING_OFF_HOUR: 12,  // 12시 (정오)
+    MIN_GETTING_OFF_HOUR: 12,
 
     clickBtnSubmit() {
         const btnSubmit = document.getElementById('btnSubmit');
-        btnSubmit.click();
+
+        // 가끔씩 버튼 안눌리는 현상이 있어 의도적으로 약간 지연
+        setTimeout(() => {
+            btnSubmit.click();
+        }, 500);
     },
 
     login() {
