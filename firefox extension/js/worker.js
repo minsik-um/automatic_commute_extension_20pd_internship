@@ -151,6 +151,7 @@ function main() {
             Worker.login();
             break;
         case 'https://dt20chk.hyosungitx.com/onPledge':
+        case 'https://dt20chk.hyosungitx.com/offPledge':
             Worker.signPledge();
             break;
         case 'https://dt20chk.hyosungitx.com/agreement':
@@ -179,7 +180,7 @@ function main() {
             break;
         case 'https://dt20chk.hyosungitx.com/dailyReport':
             // load 될 때까지 기다렸다가 처리
-            Worker.signPledge();
+            Worker.chooseTodayWork();
             break;
     }
 
