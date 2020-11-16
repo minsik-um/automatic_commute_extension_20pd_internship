@@ -8,7 +8,7 @@
 PC만 지원, 모바일 미지원 사유는 아래 따로 기술함.
 
 - Firefox Add-on
-- Chrome Extension
+- Chrome Extension(현재 미지원)
 
 ### 설치 방법(Firefox add-on)
 1. [install.xpi](https://github.com/minsik-um/automatic_commute_extension_20pd_internship/raw/master/install.xpi) 다운로드
