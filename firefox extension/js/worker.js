@@ -110,10 +110,19 @@ Worker = {
         selectTag.dispatchEvent(new Event('change'));
     },
 
+    _pickFromRadioBtn({radioBtnId}) {
+        const radioBtn = document.querySelector(`#${radioBtnId}`);
+
+        radioBtn.checked = true;
+        radioBtn.dispatchEvent(new Event('click'));    
+    },
+
     chooseTodayWork() {
         AddonStorage.get({
-            keyArray: ['categoryIdx1', 'categoryIdx2', 'categoryIdx3']
+            keyArray: ['categoryBigIdx', 'categoryIdx1', 'categoryIdx2', 'categoryIdx3']
             ,callback: items => {
+                this._pickFromRadioBtn({radioBtnId: `rdJobType${items.categoryBigIdx}`});
+
                 this._pickFromSelectTag({
                     selectTagId: 'selCategory1'
                     , idx: items.categoryIdx1
@@ -126,7 +135,7 @@ Worker = {
                     selectTagId: 'selCategory3'
                     , idx: items.categoryIdx3
                 });
-
+               
                 this.clickBtnSubmit();
             }
         });

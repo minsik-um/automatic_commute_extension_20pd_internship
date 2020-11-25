@@ -18,6 +18,7 @@ function save_options(e) {
         newData: {
             userId: document.getElementById('login_id').value
             ,userPasswd: document.getElementById('login_passwd').value
+            ,categoryBigIdx: document.getElementById('categoryBig').value
             ,categoryIdx1: document.getElementById('category1').value
             ,categoryIdx2: document.getElementById('category2').value
             ,categoryIdx3: document.getElementById('category3').value
@@ -28,16 +29,27 @@ function save_options(e) {
   }
 
 function restore_options() {
-    document.getElementById('test').innerHTML = 'sdfsdaf';
-
     AddonStorage.get({
-        keyArray: ['userId', 'userPasswd', 'categoryIdx1', 'categoryIdx2', 'categoryIdx3']
+        keyArray: ['userId', 'userPasswd', 'categoryBigIdx', 'categoryIdx1', 'categoryIdx2', 'categoryIdx3']
         ,callback: items => {
-            document.getElementById('login_id').value = items.userId;
-            document.getElementById('login_passwd').value = items.userPasswd;
-            document.getElementById('category1').value = items.categoryIdx1;
-            document.getElementById('category2').value = items.categoryIdx2;
-            document.getElementById('category3').value = items.categoryIdx3;
+            if (items.userId) {
+                document.getElementById('login_id').value = items.userId;
+            }
+            if (items.userPasswd) {
+                document.getElementById('login_passwd').value = items.userPasswd;
+            }
+            if (items.categoryBigIdx) {
+                document.getElementById('categoryBig').value = items.categoryBigIdx;
+            }
+            if (items.categoryIdx1) {
+                document.getElementById('category1').value = items.categoryIdx1;
+            }
+            if (items.categoryIdx2) {
+                document.getElementById('category2').value = items.categoryIdx2;
+            }
+            if (items.categoryIdx3) {
+                document.getElementById('category3').value = items.categoryIdx3;
+            }
         }
     });
 }

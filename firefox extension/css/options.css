@@ -104,6 +104,10 @@ body {
     margin-bottom: 20px;
 }
 
+.wrap_input + .tooltip {
+    margin-top: 20px;
+}
+
 .bottom_footer {
     margin-top: 20px;
     padding: 10px 20px;
